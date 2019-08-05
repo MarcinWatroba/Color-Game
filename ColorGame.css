@@ -1,0 +1,150 @@
+body {
+    background-color: rgb(35, 35, 35);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.jumbotron {
+    background-color: steelblue;
+    transition: background 500ms;
+    --webkit-transition: background 500ms;
+    -moz-transition: background 500ms;
+}
+
+.lead {
+    font-size: 1.75rem;
+}
+
+#rgbText {
+    font-size: 2.25rem;
+    text-transform: uppercase;
+}
+
+#stripe {
+    display: -webkit-flex; /* Safari */
+    display: flex;  
+    background: white;
+    height: 40px;
+    text-align: center;
+    color: black;
+}
+
+.left {
+    display: inline-block;
+    flex: 1;  
+  }
+  
+  .left button {
+    float: right;  
+  }
+  
+  .right {
+    display: inline-block;
+    flex: 1;
+  }
+  
+  .right button {
+    float: left;
+  }
+
+  .right .displayMenuBttn {
+    float: none;
+    display: inline-block;
+  }
+  
+  .center {
+    display: inline-block;
+    width: 20%;
+    align-self: center;
+  }
+
+button {
+    border: none;
+    
+    background-color: white;
+    color: steelblue;
+    font-weight: 700;
+    letter-spacing: 1px;
+    height: 100%;
+    transition: all 500ms;
+    --webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    color: white;
+    background-color: steelblue;
+}
+
+.selected {
+    color: white;
+    background-color: steelblue;
+}
+
+#dropdown {
+    width: 100%;
+    padding: 0;
+    background-color: white;
+    list-style: none;
+    text-align: center;
+}
+
+#dropdown button {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+.square {
+    border-radius: 10%;
+    width: 30%;
+    padding-bottom: 30%;
+    background-color: rgb(35, 35, 35);
+    margin: 1.66%;
+    float: left;
+    transition: all 500ms;
+    --webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+}
+
+@media (max-width: 700px) {
+    body {
+        font-size: 16px;
+        font-weight: 100;
+    }
+
+    .lead {
+        font-size: 1.25rem;
+    }
+
+    #rgbText {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 380px) {
+    body {
+        font-size: 12px;
+        font-weight: 100;
+    }
+
+    .lead {
+        font-size: 1.0rem;
+    }
+
+    #rgbText {
+        font-size: 1.75rem;
+    }
+
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Color Game</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="ColorGame.css">
+    <script type="text/javascript" src="assets/js/lib/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+
+    <div class="jumbotron jumbotron-fluid py-2 my-0">
+        <div class=" text-center">
+          <p class="lead mb-0">THE GREAT</p>
+          <h1 class="display-4 mb-0" id="rgbText">rgb(120, 255, 115)</h1>
+          <p class="lead">GUESSING GAME</p>
+        </div>
+    </div>
+
+    <div id="stripe" class="menu">
+      <div class="left">
+        <button id="reset">NEW COLORS</button>
+      </div>
+      <div class="center">
+        <span id="feedback"></span>
+      </div>
+      <div class="right">
+        <button class="level hidden">EASY</button>
+        <button class="level hidden selected">MEDIUM</button>
+        <button class="level hidden">HARD</button>
+        <button id="menuButton" class="hidden">LEVELS</button>
+      </div>
+    </div>
+
+    <ul id="dropdown" class="menu hidden">       
+      <li><button class="level">EASY</button></li>
+      <li><button class="level selected">MEDIUM</button></li>
+      <li><button class="level">HARD</button></li>
+    </ul>
+
+
+    <div class="container">
+      <div class='square'></div>
+      <div class='square'></div>
+      <div class='square'></div>
+      <div class='square'></div>
+      <div class='square'></div>
+      <div class='square'></div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="ColorGame.js"></script>
+</body>
+</html>
